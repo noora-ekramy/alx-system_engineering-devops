@@ -1,5 +1,5 @@
 
 #!/bin/bash
 
-# change group owner of file hello to school
-sudo chgrp school hello
+sudo chown :school hello
+
