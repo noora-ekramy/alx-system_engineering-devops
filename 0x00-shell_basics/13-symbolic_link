@@ -1,2 +1,2 @@
 #!/bin/bash\
-ln -s /bin/ls __ls__
+lrwxrwxrwx 1 user user 7 Mar 10 14:55 __ls__ -> /bin/ls
