@@ -1,16 +1,3 @@
 #!/bin/bash
+find . -maxdepth 1 -name '*.html' -type f -newer ../ -exec cp -n {} .. \;
 
-for file in *.html
-do
-  if [ -f "../$file" ]
-  then
-    if [ "$file" -nt "../$file" ]
-    then
-      cp "$file" "../$file"
-      echo "Copied $file to parent directory."
-    fi
-  else
-    cp "$file" "../$file"
-    echo "Copied $file to parent directory."
-  fi
-done
