@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | awk '{printf "%s%s", ($0~/\/$/)?$0", ":"./, ", $0} END {print ""}'
+ls -1a | sort -df | sed -e 's/^/"/' -e 's/$/",/' -e 's/\/",$/\//' | tr -d '\n'
