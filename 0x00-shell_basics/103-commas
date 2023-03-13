@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 --group-directories-first | sed -e 's/[^\/]*$/&\//' | tr '\n' ','; echo
+ls -1a | sort -d | sed -e 's/^/"/' -e 's/$/",/' -e 's/\/",$/\//'
