@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sort -df | sed -e 's/^/"/' -e 's/$/",/' -e 's/\/",$/\//' | tr -d '\n'
+ls -1a | grep -v '^\.$\|^\.\.$' | sort -df | sed -e 's/^/"/' -e 's/$/",/' -e 's/\/",$/\//'
