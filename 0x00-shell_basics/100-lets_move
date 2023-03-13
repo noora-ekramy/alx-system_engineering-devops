@@ -1,2 +1,2 @@
-shopt -s nocaseglob; mv [[:upper:]]* /tmp/u/
-
+!#/bin/bash
+ mv [[:upper:]]* /tmp/u/
