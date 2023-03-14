@@ -1,2 +1,2 @@
 #!/bin/bash
-sed 'y/AZce/ZZee/'
+sed -e 's/A/Z/g' -e 's/c/e/g'
