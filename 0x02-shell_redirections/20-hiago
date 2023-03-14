@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "some input with c's and C's" | ./remove_c.sh
+tr -d 'cC'
+
