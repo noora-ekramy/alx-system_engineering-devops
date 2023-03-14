@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -e '$p' iacta >> iacta
+ls -la > ls_cwd_content
