@@ -1,2 +1,2 @@
 #!/bin/bash
-declare BEST="School"; echo "The value of BEST is: $BEST"
+function set_best { local BEST="School"; echo "$BEST"; }; set_best
