@@ -1,2 +1,2 @@
 #!/bin/bash
-function set_best { local BEST="School"; echo "$BEST"; }; set_best
+BEST=School
