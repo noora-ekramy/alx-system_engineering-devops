@@ -1,1 +1,2 @@
-
+#!bin/bash
+declare BEST="School"; echo "The value of BEST is: $BEST"
