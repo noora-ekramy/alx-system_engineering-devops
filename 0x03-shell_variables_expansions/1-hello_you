@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello $(whoami)!"
+echo "hello $(whoami | awk '{print toupper(substr($0, 1, 1)) tolower(substr($0, 2))}')"
