@@ -1,2 +1,2 @@
 #!/bin/bash
-(set -o posix; set|grep -v '^BASH_'|grep -v '^\(PWD\|SHLVL\|_\)='|grep -v '^local '|declare -F|awk '{print $3}') | { IFS=$'\n'; echo "$(cat -)" ; }
+set | grep -E '^\w+=|^declare -f' | tr '\n' ' '
