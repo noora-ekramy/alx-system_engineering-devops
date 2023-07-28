@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "_hello" chown vincent -exec chgrp staff
+chown -h vincent:staff _hello
